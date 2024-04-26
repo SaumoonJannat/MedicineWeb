@@ -120,3 +120,7 @@ def show_cart(request):
         amount = amount + value
     totalamount = amount + 40
     return render(request,'app/addtocart.html',locals())
+
+class checkout(View):
+    def get(self,request):
+        return render(request,'app/checkout.html',locals())
