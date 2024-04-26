@@ -31,3 +31,24 @@ class CategoryTitle(View):
         product = Product.objects.filter(title=val)
         title = Product.objects.filter(category=product[0].category).values('title')
         return render(request, "app/category.html", locals())
+
+
+class ProductDetail(View):
+    def get(self, request, pk):
+        product = Product.objects.get(pk=pk)
+        return render(request, "app/productdetail.html", locals())
+
+
+class CustomerRegistrationView(View):
+    def get(self, request):
+        form = CustomerRegistrationForm()
+        return render(request, 'app/customerregistration.html', locals())
+
+    def post(self, request):
+        form = CustomerRegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Congratulations! User Registration Successful")
+        else:
+            messages.warning(request, "Invalid input data")
+        return render(request, 'app/customerregistration.html', locals())
