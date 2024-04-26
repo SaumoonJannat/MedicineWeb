@@ -2,6 +2,26 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+STATE_CHOICES = (
+    ('Dhaka','Dhaka'),
+    ('Rangpur','Rangpur'),
+    ('Chattogram','Chattogram'),
+    ('Rajshai','Rajshai'),
+    ('Khulna','Khulna'),
+    ('Barishal','Barishal'),
+    ('Mymensingh','Mymensingh')
+)
+
+
+CATEGORY_CHOICES = (
+    ('CL','Cold'),
+    ('EY','Eye'),
+    ('DT','Dehydration'),
+    ('HT','Heat Stroke'),
+    ('SA','Seasonal allergies'),
+    ('TP','Typhoid'),
+    ('OT','Other')
+)
 
 
 class Product(models.Model):
