@@ -1,0 +1,53 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/image/banner/bn4.png' %}"width = "500" height = "400" class="d-block w-100" alt="banner-image">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static 'app/image/banner/bn2.jpg' %}" width = "500" height ="400" class="d-block w-100" alt="banner-image">
+      </div>
+
+      <div class="carousel-item ">
+        <img src="{% static 'app/image/banner/bn3.jpg' %}" width = "500" height = "400" class="d-block w-100" alt="banner-image">
+      </div>
+      <!--
+
+      <div class="carousel-item ">
+        <img src="{% static 'app/image/banner/bn1.png' %}" width ="500" height ="400" class="d-block w-100" alt="banner-image">
+      </div>
+    -->
+    </div>
+    </div>
+    
+
+{% endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">This is a public limited company registered in 2019 and the corporate office is at
+            Green Road, Dhaka, Bangladesh.
+        </p>
+    </div>
+    <br><br>
+
+    <h2 class="text-center">Mission</h2>
+    <br>
+    <div class="row container">
+
+        <p class="fs-4 text-center">To embrace the right medicine to delight our Customers.
+
+        </p>
+    </div>
+</div>
+<br><br>
+{% endblock main-content %}

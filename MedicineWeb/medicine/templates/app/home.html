@@ -1,0 +1,217 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/image/banner/bn4.png' %}"width = "500" height = "400" class="d-block w-100" alt="banner-image">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static 'app/image/banner/bn2.jpg' %}" width = "500" height ="400" class="d-block w-100" alt="banner-image">
+      </div>
+
+      <div class="carousel-item ">
+        <img src="{% static 'app/image/banner/bn3.jpg' %}" width = "500" height = "400" class="d-block w-100" alt="banner-image">
+      </div>
+      <!--
+
+      <div class="carousel-item ">
+        <img src="{% static 'app/image/banner/bn1.png' %}" width ="500" height ="400" class="d-block w-100" alt="banner-image">
+      </div>
+    -->
+    </div>
+    </div>
+    
+
+{% endblock banner-slider %}
+
+{% block information %}
+
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Medicine Chai</h1>
+        <small class="f5-6">Medicine Chai Here you find medicine bases on your illness. When you need any time
+            you can order medicine. We will try to give you the best service.
+        </small>
+    </div>
+
+</div>
+{% endblock information %}
+
+{% block main-content %}
+<div class="container">
+    <h2 class="text-center">Medicine chai</h2>
+
+    <br></br>
+    <div class="row container">
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'CL' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/image/product/cold2.png' %}"
+                    class="img-responsive center-block" alt="">
+                    <p class="mlkpro">Cold</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'EY' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/image/product/eye-2.png' %}"
+                    class="img-responsive center-block" alt="">
+                    <p class="mlkpro">Eye</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'DT' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/image/product/dehydration.jpg' %}"
+                    class="img-responsive center-block" alt="">
+                    <p class="mlkpro ">Dehydration</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'HT' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/image/product/heatstock2.png' %}"
+                    class="img-responsive center-block" alt="">
+                    <p class="mlkpro">Heat Stroke</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'SA' %}">
+                <div class="goodnesseccont text-center">
+                    <img src="{% static 'app/image/product/seasonal allergies.jpg' %}"height="200" width="200"
+                    class="img-responsive center-block" alt="">
+                    <p class=" mlkpro ">Seasonal Allergies</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="goodnesssec buttermilk buttermilk">
+            <a href="{% url 'category' 'TP' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/image/product/typhoid.jpg' %}"
+                    class="img-responsive center-block" alt="">
+                    <p class="mlkpro">Typhoid</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'OT' %}">
+                <div class="goodnesseccont text-center">
+                    <img src="{% static 'app/image/product/other.png' %}" height="300" width="300"
+                    class="img-responsive center-block" alt="">
+                    <p class="mlkpro">Other Illness</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+        <!--
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="#">
+                <div class="goodnesseccont text-center">
+                    <img src="{% static 'app/image/product/omeprazole.jpg' %}"
+                    class="img-responsive" alt="">
+                    <p class="mlkpro">Omeprazol</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="gooodnesssec buttermilk smbg">
+            <a href="#">
+                <div class="goodnesseccont text-center">
+                    <img src="{% static 'app/image/product/panadol.png' %}"
+                    class="img-responsive" alt="">
+                    <p class="mlkpro">panadol</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s;
+        animation-name: none;">
+        <div class="goodnesssec buttermilk curdbgpro">
+            <a href="#">
+                <div class="goodnesseccont text-center">
+                    <img src="{% static 'app/image/product/paracetamol.jpg' %}"
+                    class="img-responsive" alt="">
+                    <p class="mlkpro">Paracetamol</p>
+                </div>
+            </a>
+
+        </div>
+
+        </div>
+    -->
+
+    </div>
+
+</div>
+<br></br>
+   
+{% endblock main-content %}
