@@ -43,7 +43,7 @@
                       <li><a class="dropdown-item" href="{% url 'category' 'DT' %}">Dehydration</a></li>
                       <li><a class="dropdown-item" href="{% url 'category' 'HT' %}">Heat Stroke</a></li>
                       <li><a class="dropdown-item" href="{% url 'category' 'SA' %}">Seasonal allergies</a></li>
-                      <li><a class="dropdown-item" href="{% url 'category' 'TP' %}">Metformin</a></li>
+                      <li><a class="dropdown-item" href="{% url 'category' 'TP' %}">fever</a></li>
                       <li><a class="dropdown-item" href="{% url 'category' 'OT' %}">Other</a></li>
                       <!--
                       <li><a class="dropdown-item" href="{% url 'category' 'OM' %}">Omeprazole</a></li>
@@ -87,7 +87,7 @@
             </li>
 
             <li class="nav-item mx-2">
-                <a href="#" class="nav-link text-white">Cart 4</a>
+                <a href="{% url 'showcart' %}"class="nav-link text-white">Cart 4</a>
             </li>
             <li class="nav-item mx-2">
                 <a href ="#" class="nav-link text-white">Wishlist 4</a>
